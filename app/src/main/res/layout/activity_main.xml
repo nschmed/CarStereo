@@ -26,7 +26,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
                     android:text="^"
-                    android:id="@+id/volumeUp"
+                    android:id="@+id/stationUp"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
                     android:textSize="100dp" />
@@ -35,7 +35,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
                     android:text="v"
-                    android:id="@+id/volumeDown"
+                    android:id="@+id/stationDown"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
                     android:textSize="60dp" />
@@ -58,8 +58,7 @@
                 <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
-                    android:text="Station"
-                    android:id="@+id/textView"
+                    android:id="@+id/screen"
                     android:layout_weight="2"
                     android:textSize="100dp"
                     android:textAlignment="center"
@@ -106,6 +105,20 @@
                         android:text="4"
                         android:id="@+id/preset4"
                         android:layout_weight="1" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="5"
+                        android:id="@+id/preset5"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="6"
+                        android:id="@+id/preset6"
+                        android:layout_weight="1" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -122,14 +135,10 @@
                     android:layout_height="wrap_content"
                     android:text="New Button"
                     android:id="@+id/powerButton"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:onClick="power"
+                    android:background="#ffff0000" />
 
-                <SeekBar
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/seekBar"
-                    style="@android:style/Widget.DeviceDefault.SeekBar"
-                    android:layout_weight="1" />
             </LinearLayout>
 
         </LinearLayout>
